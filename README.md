@@ -8,15 +8,15 @@ The design system uses Figma to define guidance for all branding and UI. Link to
 
 ### Design Assets
 
-The raw assets specific to the brand such as logos, banners and iconography. All assets can be found in the `/assets` folder.
+Raw assets found in `/assets`. Assets specific to the brand such as logos, banners and iconography. 
 
 ### CSS Library
 
-The CSS Library is defined in `/css` folder. We leverage a classless CSS and global CSS variables approach for accessibility and ease of use.
+CSS defined in `/css` folder. Leveraging classless CSS and variables for accessibility and ease of use.
 
 ### Storybook
 
-The storybook is used to quickly view everything in one place. It brings in the Design System, Assets and CSS together in a single view. 
+Storybook is used to quickly view everything in one place. It brings in the Design System, Assets and CSS together in a single view. 
 
 ## Get Started
 
