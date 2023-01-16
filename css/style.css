@@ -1,0 +1,188 @@
+/* Begin Color Palette */
+/* font-color */
+.font-color-braun-red {
+    color: #DB4525;
+}
+
+.font-color-braun-green {
+    color: #8ECA76;
+}
+
+.font-color-almost-black {
+    color: #151515;
+}
+
+.font-color-gray-1 {
+    color: #3A3A3A;
+}
+
+.font-color-gray-2 {
+    color: #989898;
+}
+
+.font-color-gray-3 {
+    color: #C0C0C0;
+}
+
+.font-color-gray-4 {
+    color: #EFEFEF;
+}
+
+.font-color-white {
+    color: #F9F9F9;
+}
+
+.font-color-dark-stroke {
+    color: #3E3E3E;
+}
+
+.font-color-gray-stroke-1 {
+    color: #E1E1E1;
+}
+
+.font-color-gray-stroke-2 {
+    color: #D6D6D6;
+}
+
+.font-color-accent-purple {
+    color: #7B61FA;
+}
+
+/* background color */
+.bg-color-braun-red {
+    background-color: #DB4525;
+}
+
+.bg-color-braun-green {
+    background-color: #8ECA76;
+}
+
+.bg-color-almost-black {
+    background-color: #151515;
+}
+
+.bg-color-gray-1 {
+    background-color: #3A3A3A;
+}
+
+.bg-color-gray-2 {
+    background-color: #989898;
+}
+
+.bg-color-gray-3 {
+    background-color: #C0C0C0;
+}
+
+.bg-color-gray-4 {
+    background-color: #EFEFEF;
+}
+
+.bg-color-white {
+    background-color: #F9F9F9;
+}
+
+.bg-color-dark-stroke {
+    background-color: #3E3E3E;
+}
+
+.bg-color-gray-stroke-1 {
+    background-color: #E1E1E1;
+}
+
+.bg-color-gray-stroke-2 {
+    background-color: #D6D6D6;
+}
+
+.bg-color-accent-purple {
+    background-color: #7B61FA;
+}
+/* End Color Palette */
+
+/* Buttons & Links */
+.sb-btn {
+    padding: 16px 127px;
+    align-items: center;
+    border-radius: 8px;
+    border: 0px;
+    font-weight: 600;
+}
+
+.sb-btn-tags {
+    padding: 8px 16px;
+    align-items: center;
+    border-radius: 4px;
+    border: 0px;
+    font-weight: 500;
+}
+
+.sb-btn-link {
+    background-color: transparent;
+    padding: 0px;
+    font-weight: 600;
+}
+
+/* font weight */
+.font-thin {
+    font-weight: 100;
+}
+
+.font-extralight {
+    font-weight: 200;
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+.font-normal {
+    font-weight: 400;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-extrabold {
+    font-weight: 800;
+}
+
+.font-black {
+    font-weight: 900;
+}
+
+/* font size */
+.text-1 {
+    font-size: 64px;
+}
+
+.text-2 {
+    font-size: 42px;
+}
+
+.text-3 {
+    font-size: 32px;
+}
+
+.text-4 {
+    font-size: 24.2px;
+}
+
+.text-5 {
+    font-size: 16px;
+}
+
+.text-6 {
+    font-size: 14px;
+}
+
+.text-7 {
+    font-size: 11px;
+}

@@ -7,22 +7,30 @@ export default {
     type: { 
       control: { type: 'select' },
       options: [ 'h1', 'h2', 'h3', 'h4', 'h5', 'h6' ] 
+    },
+    fontWeight: { 
+      control: { type: 'select' },
+      options: [ 'font-thin', 'font-extralight', 'font-light', 'font-normal', 'font-medium', 'font-semibold', 'font-bold', 'font-extrabold', 'font-black'] 
     }
   },
 };
 
-const Template = ({ text, type }) => {
-  if(type === 'h1') return `<h1>${text}</h1>`
-  if(type === 'h2') return `<h2>${text}</h2>`
-  if(type === 'h3') return `<h3>${text}</h3>`
-  if(type === 'h4') return `<h4>${text}</h4>`
-  if(type === 'h5') return `<h5>${text}</h5>`
-  if(type === 'h6') return `<h6>${text}</h6>`
+const HeadingTemplate = ({ text, type, fontWeight }) => {
+
+  
+  const heading = document.createElement(type);
+  heading.innerText = text;
+  
+  const font_weight = fontWeight; 
+  heading.className = [font_weight].join(' ');
+  
+  return heading;
 };
 
-export const Primary = Template.bind({});
+export const Heading = HeadingTemplate.bind({});
 
-Primary.args = {
-  text: 'Heading',
-  type: 'h1'
+Heading.args = {
+  text: 'Typography',
+  type: 'h1',
+  fontWeight: 'font-normal',
 };
