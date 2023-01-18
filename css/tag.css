@@ -1,0 +1,16 @@
+div .tags {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-size: var(--text-2xs);
+    line-height: var(--text-sm);
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+    background: var(--color-gray-300);
+    color: var(--color-gray-800);
+}
+
+div .tags-active {
+    background: var(--color-accent);
+    color: var(--color-gray-100);
+}

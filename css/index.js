@@ -1,3 +1,8 @@
 import './__base.css'
 import './__vars.css'
+import './button.css'
+import './code.css'
 import './heading.css'
+import './link.css'
+import './paragraph.css'
+import './tag.css'

@@ -1,0 +1,4 @@
+p {
+    font-size: var(--text-sm);
+    line-height: var(--text-lg);
+}
