@@ -14,7 +14,6 @@ export default {
 
 const Template = ({ text, variant }) => {
     if(variant === 'primary') return `<button class='button'>${text}</button>`
-    if(variant === 'test') return `<div class='button'>${text}</div>`
     if(variant === 'disabled') return `<button class='button' disabled>${text}</button>`
     if(variant === 'primary-danger') return `<button class='button button--danger'>${text}</button>`
     if(variant === 'secondary') return `<button class='button button--secondary'>${text}</button>`
@@ -30,11 +29,6 @@ Default.args = {
     variant: 'primary'
 };
 
-export const Test = Template.bind({});
-Test.args = {
-    text: 'Test',
-    variant: 'test'
-};
 export const Primary = Template.bind({});
 Primary.args = {
     text: 'Primary',
