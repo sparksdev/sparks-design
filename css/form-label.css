@@ -1,7 +1,15 @@
 label, .form--label {
-    display: inline-flex;
+    /* display: inline-flex; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     font-size: var(--text-sm);
     line-height: var(--text-lg);
     color: var(--color-gray-900);
+}
+
+label:has(input[type=text]), .form--label:has(.input--text) {
+    display: grid;
+    grid-template-columns: 1fr;
 }

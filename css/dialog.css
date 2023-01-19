@@ -1,0 +1,32 @@
+div.dialog {
+    display: block;
+    align-items: center;
+    justify-items: center;
+    font-size: var(--text-sm);
+    line-height: var(--text-lg);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background: var(--color-gray-100);
+    color: var(--color-gray-900);
+    width: 21rem;
+}
+
+div.dialog > * {
+    text-align: center;
+    display: block;
+}
+
+div.dialog > :is(h1, h2, h3, h4, h5, h6) {
+    margin: 1.5rem 0;
+}
+
+div.dialog > :is(button, .button) {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+div.dialog > :is(button, .button):first-of-type {
+    margin-top: 1.5rem;
+}

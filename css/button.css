@@ -1,4 +1,4 @@
-.button {
+button, .button {
     display: inline-flex;
     flex-direction: row;
     align-items: flex-start;border: none;
@@ -26,34 +26,34 @@
     color: var(--color-danger);
 }
 
-.button:disabled {
+:is(button,.button):disabled {
     background: var(--color-gray-500);
     color: var(--color-gray-100);
 }
 
-.button:hover {
+:is(button,.button):hover {
     cursor: pointer;
     opacity: 0.8;
 }
 
-.button:disabled:hover {
+:is(button,.button):disabled:hover {
     cursor: not-allowed;
     opacity: 1;
 }
 
-.button:active {
+:is(button,.button):active {
     -webkit-box-shadow: inset 0 0 .25rem var(--color-gray-700);
     -moz-box-shadow: inset 0 0 .25rem var(--color-gray-700);
     box-shadow: inset 0 0 .25rem var(--color-gray-700);
 }
 
-.button--secondary:active, .button--secondary-danger:active, .button:disabled:active {
+.button--secondary:active, .button--secondary-danger:active, :is(button,.button):disabled:active {
     -webkit-box-shadow: inset 0 0 .25rem var(--color-gray-500);
     -moz-box-shadow: inset 0 0 .25rem var(--color-gray-500);
     box-shadow: inset 0 0 .25rem var(--color-gray-500);
 }
 
-.button:disabled:active {
+:is(button,.button):disabled:active {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
