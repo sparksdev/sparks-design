@@ -27,4 +27,4 @@ Storybook is used to quickly view everything in one place. It brings in the Desi
 ## Bundling CSS
 - run `yarn build-css` or `npm run build-css`
 - css is bundled from the `/css` into `/dist`
-- `style.css` OR `style.min.css` can be imported 
+- `style.css` OR `style.min.css` can be imported
