@@ -1,8 +1,8 @@
-name: Storybook
+name: storybook
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build-and-deploy:
