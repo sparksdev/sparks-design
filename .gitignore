@@ -2,6 +2,7 @@
 /node_modules
 
 # storybook
+storybook-static
 
 # next.js
 /.next/
