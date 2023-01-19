@@ -1,6 +1,7 @@
 .button {
-    /* block styles */
-    border: none;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start;border: none;
     border-radius: .5rem;
     padding: 1rem 1rem;
     font-size: var(--text-sm);
@@ -41,11 +42,21 @@
 }
 
 .button:active {
-    transform: scale(1.02);
+    -webkit-box-shadow: inset 0 0 .25rem var(--color-gray-700);
+    -moz-box-shadow: inset 0 0 .25rem var(--color-gray-700);
+    box-shadow: inset 0 0 .25rem var(--color-gray-700);
+}
+
+.button--secondary:active, .button--secondary-danger:active, .button:disabled:active {
+    -webkit-box-shadow: inset 0 0 .25rem var(--color-gray-500);
+    -moz-box-shadow: inset 0 0 .25rem var(--color-gray-500);
+    box-shadow: inset 0 0 .25rem var(--color-gray-500);
 }
 
 .button:disabled:active {
-    transform: scale(1);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }
 
 /* .button--tertiary {

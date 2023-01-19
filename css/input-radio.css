@@ -1,0 +1,24 @@
+input[type=radio], .input--radio {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    display: inline-block;
+    vertical-align: middle;
+
+    margin: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 0.0625rem solid var(--color-gray-400);
+    /* background: var(--color-gray-100); */
+    box-shadow: inset 2em 2em var(--color-gray-100);
+}
+
+input[type=radio]:checked,.input--radio:checked {
+    border: .4375rem solid var(--color-accent);
+}
+
+label input[type=radio], .form--label .input--radio {
+    margin-right: 0.75rem;
+}
