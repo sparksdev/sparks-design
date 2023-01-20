@@ -1,4 +1,4 @@
-div .tags {
+.tags {
     display: inline-flex;
     flex-direction: row;
     align-items: flex-start;
@@ -10,7 +10,7 @@ div .tags {
     color: var(--color-gray-800);
 }
 
-div .tags-active {
+.tags-active {
     background: var(--color-accent);
     color: var(--color-gray-100);
 }

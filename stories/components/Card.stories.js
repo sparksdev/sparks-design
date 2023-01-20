@@ -53,6 +53,9 @@ const Template = ({ type, title, key1, value1, key2, value2, key3, value3, key4,
         <div class='card--item-key'>${key6}</div>
         <div class='card--item-value'>${value6}</div>
       </div>
+      <div class='card--footer'>
+        <div class='tags'>Tag name</div>
+      </div>
     </div>
   `
 };
