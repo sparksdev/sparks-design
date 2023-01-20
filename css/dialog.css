@@ -1,4 +1,4 @@
-div.dialog {
+.dialog {
     display: block;
     align-items: center;
     justify-items: center;
@@ -11,22 +11,22 @@ div.dialog {
     width: 21rem;
 }
 
-div.dialog > * {
+.dialog > * {
     text-align: center;
     display: block;
 }
 
-div.dialog > :is(h1, h2, h3, h4, h5, h6) {
+.dialog > :is(h1, h2, h3, h4, h5, h6) {
     margin: 1.5rem 0;
 }
 
-div.dialog > :is(button, .button) {
+.dialog > :is(button, .button) {
     width: 100%;
     text-align: center;
     justify-content: center;
     margin-top: 0.5rem;
 }
 
-div.dialog > :is(button, .button):first-of-type {
+.dialog > :is(button, .button):first-of-type {
     margin-top: 1.5rem;
 }

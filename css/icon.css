@@ -1,5 +1,5 @@
 .icon {
-    display: grid;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 1.5rem;
@@ -7,7 +7,7 @@
     color: var(--color-gray-500);
 }
 
-.icon svg{
+.icon svg {
     width: 1.5rem;
     height: 1.5rem;
 }
