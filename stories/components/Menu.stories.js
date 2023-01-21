@@ -3,16 +3,18 @@ import avatar from '../../assets/utils/avatar.png';
 
 export default {
   title: 'Components/Menu',
-  state: {
-    control: { type: 'select' },
-    options: ['closed', 'open'],
-    description: 'State of the Menu'
-  },
-  content: {
-    control: { type: 'select' },
-    options: ['empty', 'selected'],
-    description: 'State of the Selection'
-  },
+  argTypes: {
+    state: {
+      control: { type: 'select' },
+      options: ['closed', 'open'],
+      description: 'State of the Menu'
+    },
+    content: {
+      control: { type: 'select' },
+      options: ['empty', 'selected'],
+      description: 'State of the Selection'
+    }
+  }
 };
 
 const Template = ({ state, content }) => {

@@ -8,19 +8,19 @@ export default {
       options: ['closed', 'open'],
       description: 'State of the Card'
     },
-    title: { control: 'title', description: 'Title to display' },
-    key1: { control: 'key1', description: 'Attribute Name to display' },
-    value1: { control: 'value1', description: 'Attribute Value to display' },
-    key2: { control: 'key2', description: 'Attribute Name to display' },
-    value2: { control: 'value2', description: 'Attribute Value to display' },
-    key3: { control: 'key3', description: 'Attribute Name to display' },
-    value3: { control: 'value3', description: 'Attribute Value to display' },
-    key4: { control: 'key4', description: 'Attribute Name to display' },
-    value4: { control: 'value4', description: 'Attribute Value to display' },
-    key5: { control: 'key5', description: 'Attribute Name to display' },
-    value5: { control: 'value5', description: 'Attribute Value to display' },
-    key6: { control: 'key6', description: 'Attribute Name to display' },
-    value6: { control: 'value6', description: 'Attribute Value to display' }
+    title: { control: 'text', description: 'Title to display' },
+    key1: { control: 'text', description: 'Attribute Name to display' },
+    value1: { control: 'text', description: 'Attribute Value to display' },
+    key2: { control: 'text', description: 'Attribute Name to display' },
+    value2: { control: 'text', description: 'Attribute Value to display' },
+    key3: { control: 'text', description: 'Attribute Name to display' },
+    value3: { control: 'text', description: 'Attribute Value to display' },
+    key4: { control: 'text', description: 'Attribute Name to display' },
+    value4: { control: 'text', description: 'Attribute Value to display' },
+    key5: { control: 'text', description: 'Attribute Name to display' },
+    value5: { control: 'text', description: 'Attribute Value to display' },
+    key6: { control: 'text', description: 'Attribute Name to display' },
+    value6: { control: 'text', description: 'Attribute Value to display' }
   },
 };
 
@@ -75,7 +75,7 @@ Default.args = {
   key5: 'lists',
   value5: '4',
   key6: 'Some Attribute',
-  value6: 'with a very long value that can be revealed when you tap the ‘more’ button it expands',
+  value6: 'with a very long value to test a multiline value, which can be contracted with ellipsis later',
 };
 
 export const Closed = Template.bind({});
@@ -93,7 +93,7 @@ Closed.args = {
   key5: 'lists',
   value5: '4',
   key6: 'Some Attribute',
-  value6: 'with a very long value that can be revealed when you tap the ‘more’ button it expands',
+  value6: 'with a very long value to test a multiline value, which can be contracted with ellipsis later',
 };
 
 export const Open = Template.bind({});
@@ -111,5 +111,5 @@ Open.args = {
   key5: 'lists',
   value5: '4',
   key6: 'Some Attribute',
-  value6: 'with a very long value that can be revealed when you tap the ‘more’ button it expands',
+  value6: 'with a very long value to test a multiline value, which can be contracted with ellipsis later',
 };
