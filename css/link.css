@@ -1,6 +1,6 @@
-.link {
+a, .link {
     font-size: var(--text-sm);
-    line-height: 1.125rem;
+    line-height: var(--text-lg);
     color: var(--color-accent);
 }
 
@@ -12,7 +12,7 @@
     color: var(--color-danger);
 }
 
-.link:hover {
+a:hover, .link:hover {
     cursor: pointer;
     opacity: 0.8;
 }
@@ -22,7 +22,7 @@
     opacity: 1;
 }
 
-.link:active {
+a:active, .link:active {
     text-decoration: underline;
 }
 
