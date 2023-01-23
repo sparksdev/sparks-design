@@ -9,7 +9,39 @@ label, .form--label {
     color: var(--color-gray-900);
 }
 
-label:has(input[type=text]), .form--label:has(.input--text) {
+:is(label, .form--label):has(input[type=text], .input--text
+                            input[type=password], .input--password,
+                            select, .select) {
     display: grid;
     grid-template-columns: 1fr;
+    /* font-weight: 500; */
+    font-weight: bold;
+    font-size: var(--text-xs);
+    line-height: var(--text-sm);
+    /* text-transform: uppercase; */
+}
+
+:is(label, .form--label):has(.input--error) {
+    color: var(--color-danger);
+}
+
+:is(label, .form--label):has(select, .select)::after {
+    content: '';
+    display: inline-block;
+    width: .75rem;
+    height: .75rem;
+    border-bottom: 1px solid var(--color-gray-500);
+    border-right: 1px solid var(--color-gray-500);
+    border-bottom-right-radius: .125rem;
+    transform: rotate(45deg) translate(50%, 0%);
+    transform-origin: center center;
+    transition: transform ease-in-out 100ms;
+    position: relative;
+    top: -3rem;
+    left: calc(21rem - 2.25rem);
+    pointer-events: none;
+}
+
+:is(label, .form--label):has(select, .select):has(.input--error-message)::after {
+    top: -3.875rem;
 }

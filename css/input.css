@@ -1,0 +1,103 @@
+:is(
+    input[type=text], .input--text,
+    input[type=password], .input--password
+    select, .select,
+    ) {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+
+    margin: .75rem 0;
+    padding: .875rem 1rem;
+    width: 21rem;
+    border-radius: .5rem;
+    border: 0.0625rem solid var(--color-gray-400);
+    background: var(--color-gray-100);
+    font-size: var(--font-sm);
+    line-height: 1.125rem;
+    font-weight: 400;
+    accent-color: var(--color-accent);
+}
+
+:is(
+    input[type=text], .input--text,
+    input[type=password], .input--password
+    select, .select,
+):active,
+:is(
+    input[type=text], .input--text,
+    input[type=password], .input--password
+    select, .select,
+):focus {
+    outline: none !important;
+    border: .0625rem solid var(--color-accent);
+}
+
+:is(
+    input[type=text], .input--text,
+    input[type=password], .input--password
+    select, .select,
+).input--error {
+    border: .0625rem solid var(--color-danger);
+    color: var(--color-danger);
+}
+
+.input--error-message {
+    font-size: var(--text-2xs);
+    line-height: var(--text-sm);
+    color: var(--color-danger);
+    font-weight: normal;
+}
+
+.input--icon-left+.icon,
+.input--icon-right+.icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;
+    top: -3rem;
+    color: var(--color-gray-500);
+}
+
+.input--icon-left+.icon {
+    left: .75rem;
+}
+
+.input--icon-right+.icon {
+    left: calc(21rem - 2.25rem);
+}
+
+:is(
+    input[type=text], .input--text,
+    input[type=password], .input--password
+    select, .select,
+).input--icon-left {
+    padding-left: 2.75rem;
+}
+
+:is(
+    input[type=text], .input--text,
+    input[type=password], .input--password
+    select, .select,
+).input--icon-right {
+    padding-right: 2.75rem;
+}
+
+:is(
+    input[type=text], .input--text,
+    input[type=password], .input--password
+    select, .select,
+).input--icon-left+*[class^="iconoir-"]::before,
+:is(
+    input[type=text], .input--text,
+    input[type=password], .input--password
+    select, .select,
+).input--icon-right+*[class*="iconoir-"]::before {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+:is(.icon)+.input--error-message {
+    position: relative;
+    top: -1.5rem;
+}
