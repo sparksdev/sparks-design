@@ -1,0 +1,39 @@
+.notification {
+    display: block;
+    align-items: center;
+    justify-items: start;
+    text-align: left;
+    font-size: var(--text-sm);
+    line-height: var(--text-lg);
+    padding: 1rem 0;
+    background: var(--color-gray-100);
+    color: var(--color-gray-900);
+    width: 21rem;
+    border-bottom: .0625rem solid var(--color-gray-200);
+}
+
+.notification--title {
+    font-weight: 600;
+    line-height: var(--text-lg);
+    margin-bottom: .25rem;
+}
+
+.notification--message {
+    margin-bottom: .25rem;
+}
+
+.notification--time {
+    color: var(--color-gray-600);
+}
+
+.notification--unread .notification--title::before {
+    content: '';
+    display: inline-block;
+    width: .625rem;
+    height: .625rem;
+    border-radius: .3125rem;
+    border: .3125rem solid var(--color-accent);
+    /* box-shadow: inset 1em 1em var(--color-accent);
+    background: var(--color-accent); */
+    margin: 0 .5rem 0 0;
+}
