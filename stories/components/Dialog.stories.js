@@ -3,7 +3,7 @@ import '../../css/index.js';
 export default {
   title: 'Components/Dialog',
   argTypes: {
-    title: { control: 'title', description: 'Title to display' },
+    title: { control: 'text', description: 'Title to display' },
     text: { control: 'text', description: 'Text to display' }
   },
 };
