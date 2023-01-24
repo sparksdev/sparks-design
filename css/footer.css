@@ -43,7 +43,8 @@
     display: grid;
     grid-template-columns: 1em auto;
     column-gap: .5rem;
-    align-content: center;
+    /* align-content: center; */
+    align-items:center;
     justify-content: start;
     margin-top: .5rem;
     font-size: var(--text-sm);
@@ -54,4 +55,9 @@
     width: 1rem;
     height: 1rem;
     color: var(--color-gray-650);
+}
+
+.footer--link .icon::before {
+    width: 1rem;
+    height: 1rem;
 }
