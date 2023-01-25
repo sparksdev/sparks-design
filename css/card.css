@@ -6,7 +6,7 @@
     line-height: var(--text-lg);
     padding: 1.5rem;
     border-radius: 1rem;
-    background: var(--color-gray-300);
+    background: var(--color-gray-200);
     color: var(--color-gray-900);
     width: 21rem;
 }
@@ -26,7 +26,7 @@
     justify-self: right;
     content: '•  •  •';
     font-size: var(--text-2xs);
-    color: var(--color-gray-600);
+    color: var(--color-gray-500);
 }
 
 .card > .card--item {
@@ -34,7 +34,7 @@
     grid-template-columns: auto auto;
     font-size: var(--text-2xs);
     line-height: var(--text-sm);
-    border-top: 0.0625rem solid var(--color-gray-200);
+    border-top: 0.0625rem solid var(--color-gray-100);
     padding: .5rem .0;
 }
 
@@ -55,7 +55,7 @@
     line-height: var(--text-sm);
     justify-self: right;
     text-align: end;
-    color: var(--color-gray-600)
+    color: var(--color-gray-500)
 }
 
 .card--footer {
@@ -65,7 +65,7 @@
 }
 
 .card--footer > .tags {
-    background: var(--color-gray-100);
+    background: var(--color-gray-50);
     margin: .125rem .0625rem;
 }
 

@@ -2,7 +2,7 @@ code {
     font-family: 'Roboto Mono', 'Noto Sans Mono', 'Courier New', Courier, monospace;
     font-size: var(--text-xs);
     line-height: var(--text-lg);
-    background: var(--color-gray-300);
+    background: var(--color-gray-200);
     padding: .5rem .75rem;
     border-radius: .5rem;
 }

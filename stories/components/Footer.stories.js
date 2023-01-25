@@ -1,6 +1,6 @@
 import '../../css/index.js';
-import logo from '../../assets/logos/logo.svg';
-import logoFooter from '../../assets/logos/logo-footer.svg';
+import logo from '../../assets/logos/logo-small.svg';
+import logoFooter from '../../assets/logos/logo-gray-600.svg';
 
 export default {
   title: 'Components/Footer',
@@ -10,8 +10,7 @@ const Template = () => {
   return `
     <div class='footer'>
       <div class='footer--header'>
-        <img class='icon' src='${logo}' />
-        <h3>SPARKS</h3>
+        <img class='icon logo--small' src='${logo}' />
       </div>
       <div class='footer--links'>
         <div class='footer--link'>

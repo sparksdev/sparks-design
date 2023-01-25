@@ -6,10 +6,10 @@
     font-size: var(--text-sm);
     line-height: var(--text-lg);
     padding: 1rem 0;
-    background: var(--color-gray-100);
+    background: var(--color-gray-50);
     color: var(--color-gray-900);
     width: 21rem;
-    border-bottom: .0625rem solid var(--color-gray-200);
+    border-bottom: .0625rem solid var(--color-gray-100);
 }
 
 .notification--title {
@@ -23,7 +23,7 @@
 }
 
 .notification--time {
-    color: var(--color-gray-600);
+    color: var(--color-gray-500);
 }
 
 .notification--unread .notification--title::before {
