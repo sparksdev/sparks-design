@@ -5,10 +5,11 @@
 
   /* Accents */
   --color-accent: #7b61fa; /* Accent Purple */
+  --color-accent-fg: #f9f9f9; /* Accent Purple */
 
   /* Palette */
   --color-gray-900: #151515; /* Almost Black */
-  --color-gray-800: #3a3a3a; /* Gray 1*/
+  --color-gray-800: #3a3a3a; /* Gray 1 */
   --color-gray-700: #3e3e3e; /* Dark Stroke */
   --color-gray-600: #6b6b6b; /* No Name */
   --color-gray-500: #989898; /* Gray 2 */
@@ -16,7 +17,7 @@
   --color-gray-300: #d6d6d6; /* Gray Stroke 2 */
   --color-gray-200: #efefef; /* Gray 4 */
   --color-gray-100: #e1e1e1; /* Gray Stroke 1 */
-  --color-gray-50: #f9f9f9; /* Off White */
+  --color-gray-50:  #f9f9f9; /* Off White */
 
   /* Font Sizes */
   --text-2xs: 0.6875rem;

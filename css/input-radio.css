@@ -16,6 +16,7 @@ input[type=radio], .input--radio {
 }
 
 input[type=radio]:checked,.input--radio:checked {
+    box-shadow: inset 2em 2em var(--color-accent-fg);
     border: .4375rem solid var(--color-accent);
 }
 

@@ -6,14 +6,14 @@ button, .button {
     padding: 1rem 1rem;
     font-size: var(--text-sm);
     background: var(--color-accent);
-    color: var(--color-gray-50);
+    color: var(--color-accent-fg);
 }
 
 /* .button--primary { } */
 
 .button--danger {
     background: var(--color-danger);
-    color: var(--color-gray-50);
+    color: var(--color-accent-fg);
 }
 
 .button--secondary {
@@ -28,7 +28,7 @@ button, .button {
 
 :is(button,.button):disabled {
     background: var(--color-gray-400);
-    color: var(--color-gray-50);
+    color: var(--color-accent-fg);
 }
 
 :is(button,.button):hover {
