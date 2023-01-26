@@ -54,9 +54,14 @@
 .input--icon-right+.icon {
     width: 1.5rem;
     height: 1.5rem;
-    position: relative;
-    top: -3rem;
+    position: absolute;
+    /* top: -3rem; */
+    bottom: 1.5rem;
     color: var(--color-gray-400);
+}
+
+.form--label-error :is(.input--icon-left+.icon, .input--icon-right+.icon) {
+    bottom: 2.375rem;
 }
 
 .input--icon-left+.icon {
@@ -98,8 +103,8 @@
 }
 
 :is(.icon)+.input--error-message {
-    position: relative;
-    top: -1.5rem;
+    /* position: relative; */
+    /* top: -1.5rem; */
 }
 
 :is(

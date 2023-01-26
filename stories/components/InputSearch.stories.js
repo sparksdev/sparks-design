@@ -18,13 +18,13 @@ const Template = ({ text, type }) => {
     <label class='form--label'>
       <input type='text' class='input--text input--icon-left' placeholder='Enter your search' value='${text}' />
       <i class="iconoir-search icon input--icon" ></i>
-      </label>
-      `
-      if (type === 'active') return `
-      <label class='form--label'>
-      <input type='text' class='input--text input--icon-left' placeholder='Enter your search' value='${text}' autofocus/>
+    </label>
+  `
+  if (type === 'active') return `
+    <label class='form--label'>
+      <input type='text' class='input--text input--icon-left' placeholder='Enter your search' value='${text}' autofocus />
       <i class="iconoir-search icon input--icon" ></i>
-  </label>
+    </label>
   `
 }
 

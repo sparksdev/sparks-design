@@ -7,6 +7,7 @@ label,
   line-height: var(--text-sm);
   /* text-transform: uppercase; */
   color: var(--color-gray-900);
+  position: relative;
 }
 
 /* Define declarative classes for browsers that don't support :has() */
