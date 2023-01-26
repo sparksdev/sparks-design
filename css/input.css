@@ -101,3 +101,9 @@
     position: relative;
     top: -1.5rem;
 }
+
+:is(
+    select, .select,
+).input--icon-right+.icon {
+    pointer-events: none;
+}

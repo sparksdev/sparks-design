@@ -27,7 +27,7 @@ const Template = ({ label, text, type }) => {
     </label>
   `
   if (type === 'error') return `
-    <label class='form--label'>
+    <label class='form--label form--label-error'>
       ${label}
       <input type='text' class='input--text input--error' placeholder='Enter your name' value='${text}'/>
       <div class='input--error-message'>

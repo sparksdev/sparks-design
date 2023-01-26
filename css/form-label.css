@@ -1,47 +1,88 @@
-label, .form--label {
-    /* display: inline-flex; */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    font-size: var(--text-sm);
-    line-height: var(--text-lg);
-    color: var(--color-gray-900);
+label,
+.form--label {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-weight: bold;
+  font-size: var(--text-xs);
+  line-height: var(--text-sm);
+  /* text-transform: uppercase; */
+  color: var(--color-gray-900);
 }
 
-:is(label, .form--label):has(input[type=text], .input--text
-                            input[type=password], .input--password,
-                            select, .select) {
-    display: grid;
-    grid-template-columns: 1fr;
-    /* font-weight: 500; */
-    font-weight: bold;
-    font-size: var(--text-xs);
-    line-height: var(--text-sm);
-    /* text-transform: uppercase; */
+/* Define declarative classes for browsers that don't support :has() */
+.form--label-inline {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: var(--text-sm);
+  line-height: var(--text-lg);
+  font-weight: normal;
+}
+
+.form--label-error {
+  color: var(--color-danger);
+}
+
+/* .form--label-select::after {
+  content: "";
+  display: inline-block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-bottom: 1px solid var(--color-gray-400);
+  border-right: 1px solid var(--color-gray-400);
+  border-bottom-right-radius: 0.125rem;
+  transform: rotate(45deg) translate(50%, 0%);
+  transform-origin: center center;
+  transition: transform ease-in-out 100ms;
+  position: relative;
+  top: -3rem;
+  left: calc(21rem - 2.25rem);
+  pointer-events: none;
+}
+
+.form--label-select.form--label-error::after {
+  top: -3.875rem;
+} */
+
+/* :is(label, .form--label):has(input[type="radio"], .input--radio
+    input[type="checkbox"], .input--checkbox) {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: var(--text-sm);
+  line-height: var(--text-lg);
+  font-weight: normal;
 }
 
 :is(label, .form--label):has(.input--error) {
-    color: var(--color-danger);
+  color: var(--color-danger);
 }
 
 :is(label, .form--label):has(select, .select)::after {
-    content: '';
-    display: inline-block;
-    width: .75rem;
-    height: .75rem;
-    border-bottom: 1px solid var(--color-gray-400);
-    border-right: 1px solid var(--color-gray-400);
-    border-bottom-right-radius: .125rem;
-    transform: rotate(45deg) translate(50%, 0%);
-    transform-origin: center center;
-    transition: transform ease-in-out 100ms;
-    position: relative;
-    top: -3rem;
-    left: calc(21rem - 2.25rem);
-    pointer-events: none;
+  content: "";
+  display: inline-block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-bottom: 1px solid var(--color-gray-400);
+  border-right: 1px solid var(--color-gray-400);
+  border-bottom-right-radius: 0.125rem;
+  transform: rotate(45deg) translate(50%, 0%);
+  transform-origin: center center;
+  transition: transform ease-in-out 100ms;
+  position: relative;
+  top: -3rem;
+  left: calc(21rem - 2.25rem);
+  pointer-events: none;
 }
 
 :is(label, .form--label):has(select, .select):has(.input--error-message)::after {
-    top: -3.875rem;
-}
+  top: -3.875rem;
+} */

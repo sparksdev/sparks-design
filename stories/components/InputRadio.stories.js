@@ -13,8 +13,18 @@ export default {
 };
 
 const Template = ({ text, type }) => {
-  if (type === 'default') return `<label class='form--label'><input type='radio' class='input--radio' />${text}</label>`
-  if (type === 'checked') return `<label class='form--label'><input type='radio' class='input--radio' checked />${text}</label>`
+  if (type === 'default') return `
+    <label class='form--label-inline'>
+      <input type='radio' class='input--radio' />
+      ${text}
+    </label>
+  `
+  if (type === 'checked') return `
+    <label class='form--label-inline'>
+      <input type='radio' class='input--radio' checked />
+      ${text}
+    </label>
+  `
 };
 
 export const Default = Template.bind({});
