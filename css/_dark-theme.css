@@ -1,0 +1,70 @@
+[data-theme="dark"],
+[data-theme="dark"] ::before,
+[data-theme="dark"] ::after {
+  /* We only override color vars that change from light-theme */
+  
+  /* Palette for dark mode */
+  --color-gray-50: #151515; /* Almost Black */
+  --color-gray-100: #3a3a3a; /* Gray 1 */
+  --color-gray-200: #3e3e3e; /* Dark Stroke */
+  --color-gray-250: #4d4d4d; /* No Name - Dark */
+  --color-gray-275: #606060; /* No Name - Dark */
+  --color-gray-300: #6b6b6b; /* No Name */
+  --color-gray-400: #989898; /* Gray 2 */
+  --color-gray-500: #c0c0c0; /* Gray 3 */
+  --color-gray-600: #d6d6d6; /* Gray Stroke 2 */
+  --color-gray-700: #efefef; /* Gray 4 */
+  --color-gray-800: #e1e1e1; /* Gray Stroke 1 */
+  --color-gray-900: #f9f9f9; /* Off White */
+  
+  /* Only specify colors that don't change according to palette changes */
+
+  /* Button */
+  --button-disabled-background-color: var(--color-gray-100);
+
+  /* Card */
+  --card-background-color: var(--color-gray-100);
+  --card-dots-color: var(--color-gray-400);
+  --card-item-border-color: var(--color-gray-250);
+  --card-item-value-font-color: var(--color-gray-400);
+  --card-tags-background-color: var(--color-gray-275);
+
+  /* Code */
+  --code-background-color: var(--color-gray-100);
+  --code-font-color: var(--color-gray-700);
+
+  /* Dialog */
+  --dialog-background-color: var(--color-gray-100);
+
+  /* Footer */
+  --footer-background-color: var(--color-gray-100);
+  --footer-font-color: var(--color-gray-900);
+  --footer-header-border-color: var(--color-gray-200);
+
+  /* Input */
+  --input-border-color: var(--color-gray-200);
+
+  /* Input Radio */
+  --input-radio-border-color: var(--color-gray-200);
+
+  /* Input Checkbox */
+  --input-checkbox-border-color: var(--color-gray-200);
+
+  /* Label */
+  --form-label-font-color: var(--color-gray-500);
+
+  /* Menu */
+  --menu-avatar-border-color: var(--color-gray-200);
+  --menu-sandwich-color: var(--color-gray-400);
+  --menu-content-item-border-color: var(--color-gray-200);
+
+  /* Notification */
+  --notification-border-color: var(--color-gray-200);
+  --notification-time-font-color: var(--color-gray-400);
+
+  /* Tags */
+  --tags-active-font-color: var(--color-gray-900);
+
+  /* Toast */
+  --toast-shadow-color: #ffffff40; /* Change to white with opacity */
+}

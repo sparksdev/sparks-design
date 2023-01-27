@@ -1,0 +1,111 @@
+/* [data-theme="light"],
+[data-theme="light"] ::before,
+[data-theme="light"] ::after {
+} */
+
+:root {
+
+  /* Main */
+  --main-background-color: var(--color-gray-50);
+  --main-font-color: var(--color-gray-900);
+
+  /* Button */
+  --button-primary-background-color: var(--color-accent);
+  --button-primary-font-color: var(--color-accent-fg);
+  --button-danger-background-color: var(--color-danger);
+  --button-danger-font-color: var(--color-accent-fg);
+  --button-secondary-background-color: var(--color-gray-50);
+  --button-secondary-font-color: var(--color-accent);
+  --button-secondary-danger-background-color: var(--color-gray-50);
+  --button-secondary-danger-font-color: var(--color-danger);
+  --button-disabled-background-color: var(--color-gray-400);
+  --button-disabled-font-color: var(--color-accent-fg);
+  --button-active-shadow-color: var(--color-gray-700);
+  --button-secondary-active-shadow-color: var(--color-gray-400);
+
+  /* Card */
+  --card-background-color: var(--color-gray-200);
+  --card-font-color: var(--color-gray-900);
+  --card-dots-color: var(--color-gray-500);
+  --card-item-border-color: var(--color-gray-100);
+  --card-item-value-font-color: var(--color-gray-500);
+  --card-tags-background-color: var(--color-gray-50);
+  --card-tags-active-background-color: var(--color-accent);
+
+  /* Code */
+  --code-background-color: var(--color-gray-200);
+  --code-font-color: var(--color-gray-800);
+
+  /* Dialog */
+  --dialog-background-color: var(--color-gray-50);
+  --dialog-font-color: var(--color-gray-900);
+
+  /* Footer */
+  --footer-background-color: var(--color-gray-200);
+  --footer-font-color: var(--color-gray-900);
+  --footer-header-border-color: var(--color-gray-300);
+  --footer-link-font-color: var(--color-gray-600);
+  --footer-link-icon-color: var(--color-gray-600);
+
+  /* Heading */
+  --heading-font-color: var(--color-gray-900);
+
+  /* Icon */
+  --icon-color: var(--color-gray-400);
+
+  /* Input */
+  --input-background-color: var(--color-gray-50);
+  --input-border-color: var(--color-gray-300);
+  --input-accent-color: var(--color-accent);
+  --input-error-font-color: var(--color-danger);
+  --input-error-border-color: var(--color-danger);
+  --input-error-message-font-color: var(--color-danger);
+  --input-icon-color: var(--color-gray-400);
+
+  /* Input Radio */
+  --input-radio-background-color: var(--color-gray-50);
+  --input-radio-border-color: var(--color-gray-300);
+  --input-radio-checked-background-color: var(--color-accent-fg);
+  --input-radio-checked-border-color: var(--color-accent);
+
+  /* Input Checkbox */
+  --input-checkbox-background-color: var(--color-gray-50);
+  --input-checkbox-border-color: var(--color-gray-300);
+  --input-checkbox-checked-background-color: var(--color-accent);
+  --input-checkbox-checked-checkmark-color: var(--color-accent-fg);
+
+  /* Label */
+  --form-label-font-color: var(--color-gray-900);
+  --form-label-error-font-color: var(--color-danger);
+
+  /* Link */
+  --link-font-color: var(--color-accent);
+  --link-disabled-font-color: var(--color-gray-400);
+  --link-danger-font-color: var(--color-danger);
+
+  /* Menu */
+  --menu-background-color: var(--color-gray-50);
+  --menu-title-font-color: var(--color-gray-900);
+  --menu-avatar-border-color: var(--color-gray-100);
+  --menu-sandwich-color: var(--color-gray-900);
+  --menu-content-item-border-color: var(--color-gray-300);
+
+  /* Notification */
+  --notification-background-color: var(--color-gray-50);
+  --notification-font-color: var(--color-gray-900);
+  --notification-border-color: var(--color-gray-100);
+  --notification-time-font-color: var(--color-gray-500);
+  --notification-unread-color: var(--color-accent);
+
+  /* Tags */
+  --tags-background-color: var(--color-gray-200);
+  --tags-font-color: var(--color-gray-800);
+  --tags-active-background-color: var(--color-accent);
+  --tags-active-font-color: var(--color-gray-50);
+
+  /* Toast */
+  --toast-background-color: var(--color-gray-50);
+  --toast-font-color: var(--color-gray-900);
+  --toast-shadow-color: #00000040; /* Black with opacity */
+
+}

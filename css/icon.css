@@ -4,7 +4,7 @@
     align-items: center;
     width: 1.5rem;
     height: 1.5rem;
-    color: var(--color-gray-400);
+    color: var(--icon-color);
 }
 
 .icon svg {
@@ -13,7 +13,7 @@
 }
 
 .icon svg * {
-    stroke: var(--color-gray-400);
+    stroke: var(--icon-color);
 }
 
 .icon::before {

@@ -6,11 +6,11 @@
     line-height: var(--text-sm);
     padding: .5rem 1rem;
     border-radius: .25rem;
-    background: var(--color-gray-200);
-    color: var(--color-gray-800);
+    background: var(--tags-background-color);
+    color: var(--tags-font-color);
 }
 
 .tags-active {
-    background: var(--color-accent);
-    color: var(--color-gray-50);
+    background: var(--tags-active-background-color);
+    color: var(--tags-active-font-color);
 }

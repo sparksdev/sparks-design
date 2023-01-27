@@ -5,15 +5,15 @@
     font-size: var(--text-sm);
     line-height: var(--text-lg);
     padding: 1rem 1.5rem;
-    background: var(--color-gray-200);
-    color: var(--color-gray-900);
+    background: var(--footer-background-color);
+    color: var(--footer-font-color);
     width: 21rem;
 }
 
 .footer .footer--header {
     flex-direction: row;
     padding: 1rem 0;
-    border-bottom: 0.0625rem solid var(--color-gray-300);
+    border-bottom: 0.0625rem solid var(--footer-header-border-color);
 }
 
 .footer .footer--header * {
@@ -32,7 +32,7 @@
     grid-auto-flow: column;
     column-gap: .5rem;
     padding: 1rem 0;
-    color: var(--color-gray-600);
+    color: var(--footer-link-font-color);
 }
 
 .footer .footer--links:first-child {
@@ -54,7 +54,7 @@
 .footer--link .icon {
     width: 1rem;
     height: 1rem;
-    color: var(--color-gray-600);
+    color: var(--footer-link-icon-color);
 }
 
 .footer--link .icon::before {

@@ -6,8 +6,8 @@
     line-height: var(--text-lg);
     padding: 1.5rem;
     border-radius: 1rem;
-    background: var(--color-gray-50);
-    color: var(--color-gray-900);
+    background: var(--dialog-background-color);
+    color: var(--dialog-font-color);
     width: 21rem;
 }
 

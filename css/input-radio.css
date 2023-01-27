@@ -10,14 +10,13 @@ input[type=radio], .input--radio {
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 50%;
-    border: 0.0625rem solid var(--color-gray-300);
-    /* background: var(--color-gray-50); */
-    box-shadow: inset 2em 2em var(--color-gray-50);
+    box-shadow: inset 2em 2em var(--input-radio-background-color);
+    border: 0.0625rem solid var(--input-radio-border-color);
 }
 
 input[type=radio]:checked,.input--radio:checked {
-    box-shadow: inset 2em 2em var(--color-accent-fg);
-    border: .4375rem solid var(--color-accent);
+    box-shadow: inset 2em 2em var(--input-radio-checked-background-color);
+    border: .4375rem solid var(--input-radio-checked-border-color);
 }
 
 label input[type=radio], .form--label .input--radio {

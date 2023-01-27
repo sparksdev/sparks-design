@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: var(--color-gray-50);
+    background: var(--menu-background-color);
     padding: 1.5rem;
     
     z-index: 1;
@@ -26,7 +26,7 @@
 
 .menu .menu--header .avatar img {
     width: 2rem;
-    border: .0625rem solid var(--color-gray-100);
+    border: .0625rem solid var(--menu-avatar-border-color);
     border-radius: 50%;
 }
 
@@ -37,7 +37,7 @@
     width: 100%;
     font-size: var(--text-md);
     line-height: var(--text-lg);
-    color: var(--color-gray-900);
+    color: var(--menu-title-font-color);
     font-weight: 600;
 }
 
@@ -70,7 +70,7 @@
     margin-bottom: .3rem;
     position: relative;
     top: -.5rem;
-    background: var(--color-gray-900);
+    background: var(--menu-sandwich-color);
     border-radius: .0625rem;
     
     z-index: 1;
@@ -113,7 +113,7 @@
 
 .menu--content a li {
     padding: 1rem 0;
-    border-bottom: .0625rem solid var(--color-gray-300);
+    border-bottom: .0625rem solid var(--menu-content-item-border-color);
 }
 
 .menu--content a:last-of-type li {

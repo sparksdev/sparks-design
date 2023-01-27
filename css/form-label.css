@@ -6,7 +6,7 @@ label,
   font-size: var(--text-xs);
   line-height: var(--text-sm);
   /* text-transform: uppercase; */
-  color: var(--color-gray-900);
+  color: var(--form-label-font-color);
   position: relative;
 }
 
@@ -22,7 +22,7 @@ label,
 }
 
 .form--label-error {
-  color: var(--color-danger);
+  color: var(--form-label-error-font-color);
 }
 
 /* .form--label-select::after {

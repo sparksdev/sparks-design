@@ -1,5 +1,7 @@
 import './__base.css'
 import './__vars.css'
+import './_light-theme.css'
+import './_dark-theme.css'
 import './button.css'
 import './code.css'
 import './dialog.css'

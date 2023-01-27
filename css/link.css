@@ -1,15 +1,15 @@
 a, .link {
     font-size: var(--text-sm);
     line-height: var(--text-lg);
-    color: var(--color-accent);
+    color: var(--link-font-color);
 }
 
 .link--disabled {
-    color: var(--color-gray-400);
+    color: var(--link-disabled-font-color);
 }
 
 .link--danger {
-    color: var(--color-danger);
+    color: var(--link-danger-font-color);
 }
 
 a:hover, .link:hover {
