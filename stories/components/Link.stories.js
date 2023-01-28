@@ -12,10 +12,14 @@ export default {
   },
 };
 
-const Template = ({ text, type }) => {
-  if (type === 'active') return `<a class='link'>${text}</a>`
-  if (type === 'disabled') return `<a class='link link--disabled'>${text}</a>`
-  if (type === 'danger') return `<a class='link link--danger'>${text}</a>`
+const Template = ({ text, type }, { globals: { backgrounds } }) => {
+
+  const theme = backgrounds?.value === '#151515' ? 'dark' : 'light'
+
+  const linkClass = type === 'disabled' ? ' link--disabled'
+                  : type === 'danger' ? ' link--danger' : ''
+
+  return `<div data-theme='${theme}'><a class='link${linkClass}'>${text}</a></div>`
 };
 
 export const Default = Template.bind({});

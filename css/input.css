@@ -16,6 +16,7 @@
     font-size: var(--font-sm);
     line-height: 1.125rem;
     background: var(--input-background-color);
+    color: var(--main-font-color);
     accent-color: var(--input-accent-color);
     border: 0.0625rem solid var(--input-border-color);
 }

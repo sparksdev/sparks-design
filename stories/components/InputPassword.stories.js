@@ -1,3 +1,4 @@
+import { breakStatement } from '@babel/types';
 import '../../css/index.js';
 
 export default {
@@ -7,43 +8,45 @@ export default {
     text: { control: 'text', description: 'Text to display' },
     type: {
       control: { type: 'select' },
-      options: ['default', 'active', 'show', 'error'],
+      options: ['default', 'show', 'error'],
       description: 'Type of Input Field to use'
     }
   },
 };
 
-const Template = ({ label, text, type }) => {
-  if (type === 'default') return `
-    <label class='form--label'>
-      ${label}
-      <input type='password' class='input--password input--icon-right' placeholder='Enter your password' value='${text}' />
-      <i class="iconoir-eye-empty icon input--icon" ></i>
-    </label>
-  `
-  if (type === 'active') return `
-    <label class='form--label'>
-      ${label}
-      <input type='password' class='input--password input--icon-right' placeholder='Enter your password' value='${text}' autofocus />
-      <i class="iconoir-eye-empty icon input--icon" ></i>
-    </label>
-  `
-  if (type === 'show') return `
-    <label class='form--label'>
-      ${label}
-      <input type='text' class='input--text input--icon-right' placeholder='Enter your password' value='${text}' />
-      <i class="iconoir-eye-off icon input--icon" ></i>
-    </label>
-  `
-  if (type === 'error') return `
-    <label class='form--label form--label-error'>
-      ${label}
-      <input type='password' class='input--password input--icon-right input--error' placeholder='Enter your password' value='${text}'/>
-      <i class="iconoir-eye-empty icon input--icon" ></i>
-      <div class='input--error-message'>
-        Weak. Must contain at least 8 characters
-      </div>
-    </label>`
+const Template = ({ label, text, type }, { globals: { backgrounds } }) => {
+
+  const theme = backgrounds?.value === '#151515' ? 'dark' : 'light'
+
+  let labelClasses = 'form--label'
+  let inputClasses = 'input--password input--icon-right'
+  let icon = 'eye-empty'
+  let inputType = 'password'
+  let errorMessage = ''
+
+  switch (type) {
+    case 'show':
+      inputType = 'text'
+      inputClasses = 'input--text input--icon-right'
+      icon = 'eye-off'
+      break
+    case 'error':
+      labelClasses += ' form--label-error'
+      inputClasses += ' input--error'
+      errorMessage = "<div class='input--error-message'>Weak. Must contain at least 8 characters</div>"
+      break
+    default:
+      break
+  }
+
+  return `<div data-theme='${theme}'>
+  <label class='${labelClasses}'>
+    ${label}
+    <input type='${inputType}' class='${inputClasses}' placeholder='Enter your password' value='${text}' />
+    <i class="iconoir-${icon} icon input--icon" ></i>
+    ${errorMessage}
+  </label>
+</div>`
 };
 
 export const Default = Template.bind({});
@@ -58,13 +61,6 @@ Inactive.args = {
   label: 'PASSWORD',
   text: '',
   type: 'default'
-};
-
-export const Active = Template.bind({});
-Active.args = {
-  label: 'PASSWORD',
-  text: 'mypassword123',
-  type: 'active'
 };
 
 export const Shown = Template.bind({});

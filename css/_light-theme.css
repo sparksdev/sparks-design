@@ -14,9 +14,11 @@
   --button-primary-font-color: var(--color-accent-fg);
   --button-danger-background-color: var(--color-danger);
   --button-danger-font-color: var(--color-accent-fg);
-  --button-secondary-background-color: var(--color-gray-50);
+  /* --button-secondary-background-color: var(--color-gray-50); */
+  --button-secondary-background-color: transparent;
   --button-secondary-font-color: var(--color-accent);
-  --button-secondary-danger-background-color: var(--color-gray-50);
+  /* --button-secondary-danger-background-color: var(--color-gray-50); */
+  --button-secondary-danger-background-color: transparent;
   --button-secondary-danger-font-color: var(--color-danger);
   --button-disabled-background-color: var(--color-gray-400);
   --button-disabled-font-color: var(--color-accent-fg);

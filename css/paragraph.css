@@ -1,4 +1,5 @@
 p {
     font-size: var(--text-sm);
     line-height: var(--text-lg);
+    color: var(--main-font-color);
 }

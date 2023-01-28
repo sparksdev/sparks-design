@@ -17,49 +17,30 @@ export default {
   }
 };
 
-const Template = ({ state, content }) => {
-  if (state === 'closed' && content === 'empty') return `
-    <div class='menu'>
-      <div class='menu--header'>
-        <div class='sandwich'><input type="checkbox" /><span></span><span></span><span></span></div>
+const Template = ({ state, content }, { globals: { backgrounds } }) => {
+
+  const theme = backgrounds?.value === '#151515' ? 'dark' : 'light'
+
+  const menuTitle = content === 'selected' ? `
+    <div class='avatar'><img src=${avatar} /></div>
+    <div class='menu--header-title'>Notifications</div>` : ''
+
+    const menuContent = state === 'open' ? `
+    <ul class='menu--content'>
+      <a href='#'><li>Dashboard</li></a>
+      <a href='#'><li>Account</li></a>
+      <a href='#'><li>Marketplace</li></a>
+    </ul>` : ''
+
+  return `<div data-theme='${theme}'>
+  <div class='menu'>
+    <div class='menu--header'>${menuTitle}
+      <div class='sandwich'>
+        <input type="checkbox" /><span></span><span></span><span></span>
       </div>
-    </div>
-  `
-  if (state === 'closed' && content === 'selected') return `
-    <div class='menu'>
-      <div class='menu--header'>
-        <div class='avatar'><img src=${avatar} /></div>
-        <div class='menu--header-title'>Notifications</div>
-        <div class='sandwich'><input type="checkbox" /><span></span><span></span><span></span></div>
-      </div>
-    </div>
-  `
-  if (state === 'open' && content === 'empty') return `
-    <div class='menu'>
-      <div class='menu--header'>
-        <div class='sandwich'><input type="checkbox" /><span></span><span></span><span></span></div>
-      </div>
-      <ul class='menu--content'>
-        <a href='#'><li>Dashboard</li></a>
-        <a href='#'><li>Account</li></a>
-        <a href='#'><li>Marketplace</li></a>
-      </ul>
-    </div>
-  `
-  if (state === 'open' && content === 'selected') return `
-    <div class='menu'>
-      <div class='menu--header'>
-        <div class='avatar'><img src=${avatar} /></div>
-        <div class='menu--header-title'>Notifications</div>
-        <div class='sandwich'><input type="checkbox" /><span></span><span></span><span></span></div>
-      </div>
-      <ul class='menu--content'>
-        <a href='#'><li>Dashboard</li></a>
-        <a href='#'><li>Account</li></a>
-        <a href='#'><li>Marketplace</li></a>
-      </ul>
-    </div>
-  `
+    </div>${menuContent}
+  </div>
+</div>`
 };
 
 export const Default = Template.bind({});

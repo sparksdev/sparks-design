@@ -8,15 +8,18 @@ export default {
   },
 };
 
-const Template = ({ title, text }) => {
-  return `
-    <div class='dialog'>
-      <h5><b>${title}</b></h5>
-      <p>${text}</p>
-      <button >Confirm</button>
-      <button class='button--secondary'>Cancel</button>
-    </div>
-  `
+const Template = ({ title, text }, { globals: { backgrounds } }) => {
+
+  const theme = backgrounds?.value === '#151515' ? 'dark' : 'light'
+
+  return `<div data-theme='${theme}'>
+  <div class='dialog'>
+    <h5><b>${title}</b></h5>
+    <p>${text}</p>
+    <button >Confirm</button>
+    <button class='button--secondary'>Cancel</button>
+  </div>
+</div>`
 };
 
 export const Default = Template.bind({});

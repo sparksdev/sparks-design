@@ -7,8 +7,11 @@ export default {
   },
 };
 
-const Template = ({ text }) => {
-  return `<div class='toast'>${text}</div>`
+const Template = ({ text }, { globals: { backgrounds } }) => {
+
+  const theme = backgrounds?.value === '#151515' ? 'dark' : 'light'
+
+  return `<div data-theme='${theme}'><div class='toast'>${text}</div></div>`
 };
 
 export const Default = Template.bind({});

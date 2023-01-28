@@ -12,9 +12,12 @@ export default {
   },
 };
 
-const Template = ({ text, type }) => {
-  if (type === 'default') return `<div class='tags'>${text}</div>`
-  if (type === 'active') return `<div class='tags tags-active'>${text}</div>`
+const Template = ({ text, type }, { globals: { backgrounds } }) => {
+
+  const theme = backgrounds?.value === '#151515' ? 'dark' : 'light'
+  const active = type === 'active' ? ' tags-active' : ''
+
+  return `<div data-theme='${theme}'><div class='tags${active}'>${text}</div></div>`
 };
 
 export const Default = Template.bind({});

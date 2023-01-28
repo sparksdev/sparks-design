@@ -13,19 +13,17 @@ export default {
   },
 };
 
-const Template = ({ text, type }) => {
-  if (type === 'default') return `
-    <label class='form--label'>
-      <input type='text' class='input--text input--icon-left' placeholder='Enter your search' value='${text}' />
-      <i class="iconoir-search icon input--icon" ></i>
-    </label>
-  `
-  if (type === 'active') return `
-    <label class='form--label'>
-      <input type='text' class='input--text input--icon-left' placeholder='Enter your search' value='${text}' autofocus />
-      <i class="iconoir-search icon input--icon" ></i>
-    </label>
-  `
+const Template = ({ text, type }, { globals: { backgrounds } }) => {
+
+  const theme = backgrounds?.value === '#151515' ? 'dark' : 'light'
+  const active = type === 'active' ? ' autofocus' : ''
+
+  return `<div data-theme='${theme}'>
+  <label class='form--label'>
+    <input type='text' class='input--text input--icon-left' placeholder='Enter your search' value='${text}'${active} />
+    <i class="iconoir-search icon input--icon" ></i>
+  </label>
+</div>`
 }
 
 export const Default = Template.bind({});

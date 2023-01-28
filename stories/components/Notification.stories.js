@@ -10,21 +10,18 @@ export default {
   },
 };
 
-const Template = ({ state, title, message, time }) => {
-  if (state === 'unread') return `
-    <div class='notification notification--unread'>
-      <div class='notification--title'>${title}</div>
-      <div class='notification--message'>${message}</div>
-      <div class='notification--time'>${time}</div>
-    </div>
-  `
-  if (state === 'read') return `
-    <div class='notification'>
-      <div class='notification--title'>${title}</div>
-      <div class='notification--message'>${message}</div>
-      <div class='notification--time'>${time}</div>
-    </div>
-  `
+const Template = ({ state, title, message, time }, { globals: { backgrounds } }) => {
+
+  const theme = backgrounds?.value === '#151515' ? 'dark' : 'light'
+  const unread = state === 'unread' ? ' notification--unread' : ''
+
+  return `<div data-theme='${theme}'
+  <div class='notification${unread}'>
+    <div class='notification--title'>${title}</div>
+    <div class='notification--message'>${message}</div>
+    <div class='notification--time'>${time}</div>
+  </div>
+</div>`
 };
 
 export const Default = Template.bind({});

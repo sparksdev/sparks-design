@@ -12,13 +12,11 @@ export default {
   },
 };
 
-const Template = ({ text, type }) => {
-  if(type === 'h1') return `<h1>${text}</h1>`
-  if(type === 'h2') return `<h2>${text}</h2>`
-  if(type === 'h3') return `<h3>${text}</h3>`
-  if(type === 'h4') return `<h4>${text}</h4>`
-  if(type === 'h5') return `<h5>${text}</h5>`
-  if(type === 'h6') return `<h6>${text}</h6>`
+const Template = ({ text, type }, { globals: { backgrounds } }) => {
+
+  const theme = backgrounds?.value === '#151515' ? 'dark' : 'light'
+
+  return `<div data-theme=${theme}><${type}>${text}</${type}></div>`
 };
 
 export const Default = Template.bind({});

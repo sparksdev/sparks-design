@@ -12,15 +12,18 @@ export default {
   },
 };
 
-const Template = ({ text, variant }) => {
-    if(variant === 'primary') return `<button class='button'>${text}</button>`
-    if(variant === 'disabled') return `<button class='button' disabled>${text}</button>`
-    if(variant === 'primary-danger') return `<button class='button button--danger'>${text}</button>`
-    if(variant === 'secondary') return `<button class='button button--secondary'>${text}</button>`
-    if(variant === 'secondary-danger') return `<button class='button button--secondary-danger'>${text}</button>`
-    // if(variant === 'tertiary') return `<button class='button button--tertiary'>${text}</button>`
-    // if(variant === 'tertiary-disabled') return `<button class='button button--tertiary' disabled>${text}</button>`
-    // if(variant === 'tertiary-danger') return `<button class='button button--tertiary button--tertiary-danger'>${text}</button>`
+const Template = ({ text, variant }, { globals: { backgrounds } }) => {
+
+    const theme = backgrounds?.value === '#151515' ? 'dark' : 'light'
+
+    if(variant === 'primary') return `<div data-theme='${theme}'><button class='button'>${text}</button></div>`
+    if(variant === 'disabled') return `<div data-theme='${theme}'><button class='button' disabled>${text}</button></div>`
+    if(variant === 'primary-danger') return `<div data-theme='${theme}'><button class='button button--danger'>${text}</button></div>`
+    if(variant === 'secondary') return `<div data-theme='${theme}'><button class='button button--secondary'>${text}</button></div>`
+    if(variant === 'secondary-danger') return `<div data-theme='${theme}'><button class='button button--secondary-danger'>${text}</button></div>`
+    // if(variant === 'tertiary') return `<div data-theme='${theme}'><button class='button button--tertiary'>${text}</button></div>`
+    // if(variant === 'tertiary-disabled') return `<div data-theme='${theme}'><button class='button button--tertiary' disabled>${text}</button></div>`
+    // if(variant === 'tertiary-danger') return `<div data-theme='${theme}'><button class='button button--tertiary button--tertiary-danger'>${text}</button></div>`
 };
 
 export const Default = Template.bind({});

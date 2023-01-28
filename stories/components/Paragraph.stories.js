@@ -1,4 +1,5 @@
 import '../../css/index.js';
+import { withColorScheme } from '../../css/index.js';
 
 export default {
   title: 'Components/Paragraph',
@@ -7,8 +8,13 @@ export default {
   },
 };
 
-const Template = ({ text, type }) => {
-  return `<p>${text}</p>`
+const Template = ({ text }, { globals: { backgrounds } }) => {
+
+  const theme = backgrounds?.value === '#151515' ? 'dark' : 'light'
+
+  return `<div data-theme='${theme}'>
+  <p>${text}</p>
+</div>`
 };
 
 export const Default = Template.bind({});

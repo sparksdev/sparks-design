@@ -7,8 +7,11 @@ export default {
   },
 };
 
-const Template = ({ icon }) => {
-  return `<div class='iconoir-${icon} icon'></div>`
+const Template = ({ icon }, { globals: { backgrounds } }) => {
+
+  const theme = backgrounds?.value === '#151515' ? 'dark' : 'light'
+
+  return `<div data-theme='${theme}'><div class='iconoir-${icon} icon'></div></div>`
 };
 
 export const Default = Template.bind({});

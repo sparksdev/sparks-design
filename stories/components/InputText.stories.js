@@ -13,27 +13,24 @@ export default {
   },
 };
 
-const Template = ({ label, text, type }) => {
-  if (type === 'default') return `
-    <label class='form--label'>
-      ${label}
-      <input type='text' class='input--text' placeholder='Enter your name' value='${text}' />
-    </label>
-  `
-  if (type === 'active') return `
-    <label class='form--label'>
-      ${label}
-      <input type='text' class='input--text' placeholder='Enter your name' value='${text}' autofocus />
-    </label>
-  `
-  if (type === 'error') return `
-    <label class='form--label form--label-error'>
-      ${label}
-      <input type='text' class='input--text input--error' placeholder='Enter your name' value='${text}'/>
-      <div class='input--error-message'>
-        Not a valid Zip Code
-      </div>
-    </label>`
+const Template = ({ label, text, type }, { globals: { backgrounds } }) => {
+
+  const theme = backgrounds?.value === '#151515' ? 'dark' : 'light'
+
+  const active = type === 'active' ? ' autofocus' : ''
+  const labelClasses = type === 'error' ? ' form--label-error' : ''
+  const inputClasses = type === 'error' ? ' input--error' : ''
+  const errorMessage = type === 'error' ? `
+    <div class='input--error-message'>
+      Not a valid Zip Code
+    </div>` : ''
+
+  return `<div data-theme='${theme}'>
+  <label class='form--label${labelClasses}'>
+    ${label}
+    <input type='text' class='input--text${inputClasses}' placeholder='Enter your name' value='${text}'${active}/>${errorMessage}
+  </label>
+</div>`
 };
 
 export const Default = Template.bind({});

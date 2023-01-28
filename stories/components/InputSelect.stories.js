@@ -17,44 +17,28 @@ export default {
   },
 };
 
-const Template = ({ label, text, type }) => {
-  if (type === 'default') return `
-    <label class='form--label form--label-select'>
-      ${label}
-      <select class='select input--icon-right'>
-        <option class='select--option' value=''>-- Please select an option --</option>
-        <option class='select--option' value='california'>California</option>
-        <option class='select--option' value='new york'>New York</option>
-        <option class='select--option' value='washington'>Washington</option>
-      </select>
-      <i class="iconoir-nav-arrow-down icon input--icon" ></i>
-    </label>
-    `
-    if (type === 'selected') return `
-      <label class='form--label form--label-select'>
-        ${label}
-        <select class='select input--icon-right' autofocus>
-          <option class='select--option' value=''>-- Please select an option --</option>
-          <option class='select--option' value='california'>California</option>
-          <option class='select--option' value='new york' selected>New York</option>
-          <option class='select--option' value='washington'>Washington</option>
-        </select>
-        <i class="iconoir-nav-arrow-down icon input--icon" ></i>
-        </label>
-    `
-    if (type === 'error') return `
-    <label class='form--label form--label-select form--label-error'>
-      ${label}
-      <select class='select input--icon-right input--error'>
-        <option class='select--option' value=''>-- Please select an option --</option>
-        <option class='select--option' value='california'>California</option>
-        <option class='select--option' value='new york'>New York</option>
-        <option class='select--option' value='washington'>Washington</option>
-      </select>
-      <i class="iconoir-nav-arrow-down icon input--icon" ></i>
-      <div class='input--error-message'>Please select an option</div>
-    </label>
-  `
+const Template = ({ label, type }, { globals: { backgrounds } }) => {
+
+  const theme = backgrounds?.value === '#151515' ? 'dark' : 'light'
+
+  const selected = type === 'selected' ? ' selected' : ''
+  const errorMessage = type === 'error' ? `
+  <div class='input--error-message'>Please select an option</div>` : ''
+  const labelClasses = type === 'error' ? ' form--label-error' : ''
+  const inputClasses = type === 'error' ? ' input--error' : ''
+
+  return `<div data-theme='${theme}'>
+  <label class='form--label form--label-select${labelClasses}'>
+    ${label}
+    <select class='select input--icon-right${inputClasses}'>
+      <option class='select--option' value=''>-- Please select an option --</option>
+      <option class='select--option' value='california'>California</option>
+      <option class='select--option' value='new york' ${selected}>New York</option>
+      <option class='select--option' value='washington'>Washington</option>
+    </select>
+    <i class="iconoir-nav-arrow-down icon input--icon" ></i>${errorMessage}
+  </label>
+</div>`
 };
 
 export const Default = Template.bind({});

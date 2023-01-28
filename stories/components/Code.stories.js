@@ -12,9 +12,12 @@ export default {
   },
 };
 
-const Template = ({ text, type }) => {
-  if (type === 'inline') return `<code>${text}</code>`
-  if (type === 'block') return `<pre><code>${text}</code></pre>`
+const Template = ({ text, type }, { globals: { backgrounds } }) => {
+
+  const theme = backgrounds?.value === '#151515' ? 'dark' : 'light'
+
+  if (type === 'inline') return `<div data-theme='${theme}'><code>${text}</code></div>`
+  if (type === 'block') return `<div data-theme='${theme}'><pre><code>${text}</code></pre></div>`
 };
 
 export const Default = Template.bind({});

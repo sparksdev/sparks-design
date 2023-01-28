@@ -12,19 +12,18 @@ export default {
   },
 };
 
-const Template = ({ text, type }) => {
-  if (type === 'default') return `
-    <label class='form--label-inline'>
-      <input type='radio' class='input--radio' />
-      ${text}
-    </label>
-  `
-  if (type === 'checked') return `
-    <label class='form--label-inline'>
-      <input type='radio' class='input--radio' checked />
-      ${text}
-    </label>
-  `
+const Template = ({ text, type }, { globals: { backgrounds } }) => {
+
+  const theme = backgrounds?.value === '#151515' ? 'dark' : 'light'
+  const checked = type === 'checked' ? 'checked ' : ''
+
+  return  `<div data-theme='${theme}'>
+  <label class='form--label-inline'>
+    <input type='radio' class='input--radio' ${checked}/>
+    ${text}
+  </label>
+</div>`
+
 };
 
 export const Default = Template.bind({});
