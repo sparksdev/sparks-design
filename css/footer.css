@@ -49,6 +49,8 @@
     margin-top: .5rem;
     font-size: var(--text-sm);
     line-height: var(--text-lg);
+    color: var(--footer-link-font-color);
+    text-decoration: none;
 }
 
 .footer--link .icon {
