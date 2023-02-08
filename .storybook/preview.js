@@ -1,3 +1,5 @@
+import sparksTheme from './sparksTheme';
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -7,6 +9,7 @@ export const parameters = {
     },
   },
   options: {
+    theme: sparksTheme,
     storySort: {
       order: [
         'Design System',
@@ -20,5 +23,8 @@ export const parameters = {
       { name: 'light', value: '#f9f9f9' },
       { name: 'dark', value: '#151515' }
     ]
-  }
+  },
+  docs: {
+    theme: sparksTheme,
+  },
 }
