@@ -9,7 +9,7 @@
     background: var(--notification-background-color);
     color: var(--notification-font-color);
     border-bottom: .0625rem solid var(--notification-border-color);
-    width: 21rem;
+    width: var(--notification-width);
 }
 
 .notification--title {

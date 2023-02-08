@@ -10,7 +10,7 @@
 
     margin: .75rem 0;
     padding: .875rem 1rem;
-    width: 21rem;
+    width: var(--input-width);
     border-radius: .5rem;
     font-weight: 400;
     font-size: var(--font-sm);

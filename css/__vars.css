@@ -28,4 +28,16 @@
   --text-xl: 1.75rem;
   --text-2xl: 2.625rem;
   --text-3xl: 4rem;
+
+  /* Common sizes */
+  --component-width-sm: 18.375rem;
+  --component-width-md: 21rem;
+  --component-width-lg: 26.25rem;
+  --component-width-xl: 36.75rem;
+  
+  --card-width: var(--component-width-md);
+  --dialog-width: var(--component-width-md);
+  --input-width: var(--component-width-md);
+  --notification-width: var(--component-width-md);
+  --toast-width: var(--component-width-md);
 }

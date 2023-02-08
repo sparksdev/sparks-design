@@ -8,7 +8,7 @@
     border-radius: 1rem;
     background: var(--dialog-background-color);
     color: var(--dialog-font-color);
-    width: 21rem;
+    width: var(--dialog-width);
 }
 
 .dialog > * {

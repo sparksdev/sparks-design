@@ -8,6 +8,6 @@ div.toast {
     border-radius: 1rem;
     background: var(--toast-background-color);
     color: var(--toast-font-color);
-    width: 21rem;
+    width: var(--toast-width);
     box-shadow: 0 .25rem 1.5rem 0 var(--toast-shadow-color);
 }
