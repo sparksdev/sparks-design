@@ -14,7 +14,7 @@ export default {
 
 const Template = ({ text, variant }, { globals: { backgrounds } }) => {
 
-    const theme = backgrounds?.value === '#151515' ? 'dark' : 'light'
+    const theme = backgrounds?.value === '#f9f9f9' ? 'light' : 'dark'
 
     if(variant === 'primary') return `<div data-theme='${theme}'><button class='button'>${text}</button></div>`
     if(variant === 'disabled') return `<div data-theme='${theme}'><button class='button' disabled>${text}</button></div>`

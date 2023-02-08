@@ -12,7 +12,7 @@ export default {
 
 const Template = ({ state, title, message, time }, { globals: { backgrounds } }) => {
 
-  const theme = backgrounds?.value === '#151515' ? 'dark' : 'light'
+  const theme = backgrounds?.value === '#f9f9f9' ? 'light' : 'dark'
   const unread = state === 'unread' ? ' notification--unread' : ''
 
   return `<div data-theme='${theme}'

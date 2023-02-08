@@ -16,7 +16,7 @@ export default {
 
 const Template = ({ label, text, type }, { globals: { backgrounds } }) => {
 
-  const theme = backgrounds?.value === '#151515' ? 'dark' : 'light'
+  const theme = backgrounds?.value === '#f9f9f9' ? 'light' : 'dark'
 
   let labelClasses = 'form--label'
   let inputClasses = 'input--password input--icon-right'

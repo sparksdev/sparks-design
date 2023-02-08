@@ -19,7 +19,7 @@ export default {
 
 const Template = ({ state, content }, { globals: { backgrounds } }) => {
 
-  const theme = backgrounds?.value === '#151515' ? 'dark' : 'light'
+  const theme = backgrounds?.value === '#f9f9f9' ? 'light' : 'dark'
 
   const menuTitle = content === 'selected' ? `
     <div class='avatar'><img src=${avatar} /></div>

@@ -9,7 +9,7 @@ export default {
 
 const Template = ({ icon }, { globals: { backgrounds } }) => {
 
-  const theme = backgrounds?.value === '#151515' ? 'dark' : 'light'
+  const theme = backgrounds?.value === '#f9f9f9' ? 'light' : 'dark'
 
   return `<div data-theme='${theme}'><div class='iconoir-${icon} icon'></div></div>`
 };

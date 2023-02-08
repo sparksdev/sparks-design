@@ -14,7 +14,7 @@ export default {
 
 const Template = ({ type, title }, { globals: { backgrounds } }) => {
 
-  const theme = backgrounds?.value === '#151515' ? 'dark' : 'light'
+  const theme = backgrounds?.value === '#f9f9f9' ? 'light' : 'dark'
   const details = type === 'closed' ? '' : `
     <div class='card--item'>
       <div class='card--item-key'>Handle</div>

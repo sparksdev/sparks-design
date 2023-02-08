@@ -14,7 +14,7 @@ export default {
 
 const Template = ({ text, type }, { globals: { backgrounds } }) => {
 
-  const theme = backgrounds?.value === '#151515' ? 'dark' : 'light'
+  const theme = backgrounds?.value === '#f9f9f9' ? 'light' : 'dark'
   const checked = type === 'checked' ? 'checked ' : ''
 
   return  `<div data-theme='${theme}'>

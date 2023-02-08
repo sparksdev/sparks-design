@@ -19,7 +19,7 @@ export default {
 
 const Template = ({ label, type }, { globals: { backgrounds } }) => {
 
-  const theme = backgrounds?.value === '#151515' ? 'dark' : 'light'
+  const theme = backgrounds?.value === '#f9f9f9' ? 'light' : 'dark'
 
   const selected = type === 'selected' ? ' selected' : ''
   const errorMessage = type === 'error' ? `

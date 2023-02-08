@@ -10,7 +10,7 @@ export default {
 
 const Template = ({ title, text }, { globals: { backgrounds } }) => {
 
-  const theme = backgrounds?.value === '#151515' ? 'dark' : 'light'
+  const theme = backgrounds?.value === '#f9f9f9' ? 'light' : 'dark'
 
   return `<div data-theme='${theme}'>
   <div class='dialog'>
